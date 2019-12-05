@@ -61,8 +61,8 @@ void readTest() {
   uint16_t data;
   
   // Read coils at function address FC(0x01) Register(10001) Address(0) Hex(0x0000) (Read-Only Status Bits)
-  Serial.println("Reading LS status bits...");
-  result = node.readCoils(0, 24);   //node.readCoils(0, 24);
+  Serial.println("Reading status bits...");
+  result = node.readCoils(0, 24);
   // Not 100% on the order of bits
   if (result == node.ku8MBSuccess) {
     data = node.getResponseBuffer(0);
@@ -72,7 +72,7 @@ void readTest() {
     Serial.print("InSync2: ");Serial.println(bitRead(data, 2));
     Serial.print("Purging: ");Serial.println(bitRead(data, 3));
     Serial.print("Trying: ");Serial.println(bitRead(data, 4));
-   /* Serial.print("Firing: ");Serial.println(bitRead(data, 5));
+    Serial.print("Firing: ");Serial.println(bitRead(data, 5));
     Serial.print("LockOut: ");Serial.println(bitRead(data, 6));
     Serial.print("FIRED: ");Serial.println(bitRead(data, 7));
     Serial.print("Cranking: ");Serial.println(bitRead(data, 8));
@@ -84,7 +84,7 @@ void readTest() {
     Serial.print("Remote Shutdown Logged: ");Serial.println(bitRead(data, 14));
     Serial.print("Overspeed Shutdown Logged: ");Serial.println(bitRead(data, 15));
     
-    data = node.getResponseBuffer(1);  //not working at all
+    data = node.getResponseBuffer(1);
     Serial.print("Raw data: ");Serial.println(data);
     Serial.print("WDOG1 Reset Latched: ");Serial.println(bitRead(data, 0));
     Serial.print("WDOG2 Reset Event: ");Serial.println(bitRead(data, 1));
@@ -96,17 +96,18 @@ void readTest() {
     Serial.print("Open Secondary: ");Serial.println(bitRead(data, 7));
   } else {
     Serial.println("Failed to read coils");
-    Serial.print("Result: ");Serial.println(result);*/
+    Serial.print("Result: ");Serial.println(result);
   }
 
-  delay(1000);
+  delay(5000);
 
   // Read the 16 registers at function address FC(0x03) Register(30005) Address(4) HEX(0x0004) (Read only status registers starting with RPM)
   Serial.println("Reading read only status registers...");
-  result = node.readHoldingRegisters(4, 16);   //node.readHoldingRegisters(4, 16);
+  result = node.readHoldingRegisters(4, 16);
+
+  delay(2000);
   
-  if (result == node.ku8MBSuccess) { 
-     Serial.print("Raw data: ");Serial.println(data);
+  if (result == node.ku8MBSuccess) {  
     Serial.print("RPM: ");Serial.println(node.getResponseBuffer(0));
     Serial.print("Timing: ");Serial.print(((signed)node.getResponseBuffer(1)) / 10.0);Serial.println(" DEG");
     Serial.print("Switch Position: ");Serial.println(node.getResponseBuffer(2));
@@ -128,11 +129,10 @@ void readTest() {
     Serial.print("Result: ");Serial.println(result);
   }
 
-
-  delay(1000);
+  delay(5000);
   
   // Read 8 read/write registers starting at function address FC(0x04) Register(40005) Address(4) HEX(0x0004)
- /* Serial.println("Reading read/write input registers...");
+  Serial.println("Reading read/write input registers...");
   result = node.readInputRegisters(4, 8);
 
   if (result == node.ku8MBSuccess) {
@@ -169,10 +169,10 @@ void readTest() {
         Serial.print("Result: ");Serial.println(result);
   }
   
-  delay(1000);*/
+  delay(5000);
 
     // Read 7 misc read/write registers starting at function address FC(0x04) Register(40122) Address(121) HEX(0x0079)
- /* Serial.println("Reading misc read/write input registers...");
+  Serial.println("Reading misc read/write input registers...");
   result = node.readInputRegisters(121, 7);
 
   if (result == node.ku8MBSuccess) {
@@ -205,5 +205,5 @@ void readTest() {
         Serial.print("Result: ");Serial.println(result);
   }
   
-  delay(1000);*/
+  delay(5000);
 }
