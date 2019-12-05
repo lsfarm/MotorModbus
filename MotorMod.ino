@@ -56,20 +56,21 @@ typedef union {
 void loop()
 {
   readTest();
-  delay(2000);
 }
 
 void readTest() {
-  uint8_t result;
+  uint8_t result = 0xE2;
   uint16_t data;
   uint8_t tries = 0;
 
   // Read coils at function address FC(0x01) Register(10001) Address(0) Hex(0x0000) (Read-Only Status Bits)
-  Serial.println("Reading status bits...");  
-  while (tries < MAX_TRIES && result != node.ku8MBSuccess) {
+  Serial.println("Reading status bits...");
+  do {
     result = node.readCoils(0, 8);
     tries++;
   }
+  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
+
   // Not 100% on the order of bits
   if (result == node.ku8MBSuccess) {
     data = node.getResponseBuffer(0);
@@ -91,10 +92,11 @@ void readTest() {
   Serial.flush();
 
   tries = 0;
-  while (tries < MAX_TRIES && result != node.ku8MBSuccess) {
+  do {
     result = node.readCoils(8, 8);
     tries++;
   }
+  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
 
   if (result == node.ku8MBSuccess) {
     data = node.getResponseBuffer(0);
@@ -116,10 +118,11 @@ void readTest() {
   Serial.flush();
 
   tries = 0;
-  while (tries < MAX_TRIES && result != node.ku8MBSuccess) {
+  do {
     result = node.readCoils(16, 8);
     tries++;
   }
+  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
 
   if (result == node.ku8MBSuccess) {
     data = node.getResponseBuffer(0);
@@ -144,10 +147,11 @@ void readTest() {
   Serial.println("Reading read only status registers...");
   
   tries = 0;
-  while (tries < MAX_TRIES && result != node.ku8MBSuccess) {
+  do {
     result = node.readHoldingRegisters(4, 8);
     tries++;
   }
+  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
 
   if (result == node.ku8MBSuccess) {
     Serial.print("RPM: ");Serial.println(node.getResponseBuffer(0));
@@ -167,10 +171,11 @@ void readTest() {
   Serial.flush();
 
   tries = 0;
-  while (tries < MAX_TRIES && result != node.ku8MBSuccess) {
+  do {
     result = node.readHoldingRegisters(12, 8);
     tries++;
   }
+  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
 
   if (result == node.ku8MBSuccess) {  
     Serial.print("RPM Retard: ");Serial.print(node.getResponseBuffer(8) / 10.0);Serial.println(" DEG");
@@ -193,10 +198,11 @@ void readTest() {
   Serial.println("Reading read/write input registers...");
 
   tries = 0;
-  while (tries < MAX_TRIES && result != node.ku8MBSuccess) {
+  do {
     result = node.readInputRegisters(4, 8);
     tries++;
   }
+  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
 
   if (result == node.ku8MBSuccess) {
     Serial.print("Disk+1: ");
@@ -239,10 +245,11 @@ void readTest() {
   Serial.println("Reading misc read/write input registers...");
 
   tries = 0;
-  while (tries < MAX_TRIES && result != node.ku8MBSuccess) {
+  do {
     result = node.readInputRegisters(121, 7);
     tries++;
   }
+  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
 
   if (result == node.ku8MBSuccess) {
     Serial.print("Crank Counter: ");
@@ -271,7 +278,7 @@ void readTest() {
     Serial.print(node.getResponseBuffer(6) / 10.0);  
   } else {
     Serial.println("Failed to read misc input registers...");
-        Serial.print("Result: ");Serial.println(result);
+    Serial.print("Result: ");Serial.println(result);
   }
   
   delay(1000);
