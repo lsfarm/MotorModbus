@@ -1,0 +1,931 @@
+
+14:58:36.954 -> 1st Raw data: 5
+14:58:36.954 -> Syncing: 1
+14:58:36.954 -> InSync1: 0
+14:58:36.954 -> InSync2: 1
+14:58:36.954 -> Purging: 0
+14:58:36.954 -> Trying: 0
+14:58:36.954 -> Firing: 0
+14:58:36.954 -> LockOut: 0
+14:58:36.954 -> FIRED: 0
+14:58:37.974 -> 2nd Raw data: 5
+14:58:37.974 -> Cranking: 1
+14:58:37.974 -> Running: 0
+14:58:37.974 -> Wrong Disk: 1
+14:58:37.974 -> GLead Shutdown Grounded: 0
+14:58:37.974 -> Remote Shutdown Present: 0
+14:58:37.974 -> GLead Shutdown Logged: 0
+14:58:37.974 -> Remote Shutdown Logged: 0
+14:58:37.974 -> Overspeed Shutdown Logged: 0
+14:58:38.962 -> 3rd Raw data: 5
+14:58:38.962 -> WDOG1 Reset Latched: 1
+14:58:38.962 -> WDOG2 Reset Event: 0
+14:58:38.962 -> CheckSum Error: 1
+14:58:38.962 -> LOW Supply Voltage: 0
+14:58:38.962 -> No Charge: 0
+14:58:38.996 -> Open Primary: 0
+14:58:38.996 -> Shorted Primary: 0
+14:58:38.996 -> Open Secondary: 0
+14:58:39.982 -> Reading read only status registers...
+14:58:39.982 -> RPM: 5
+14:58:39.982 -> Timing: 0.00 DEG
+14:58:39.982 -> Switch Position: 0
+14:58:39.982 -> Current Loop Input: 0.00 mA
+14:58:39.982 -> Disk Observed X+1: 0
+14:58:39.982 -> Insertion Retard: 0.00 DEG
+14:58:39.982 -> Switch Retard: 0.00 DEG
+14:58:39.982 -> Loop Retard: 0.00 DEG
+14:58:41.002 -> RPM Retard: 0.00 DEG
+14:58:41.002 -> Total Retard: 0.00 DEG
+14:58:41.002 -> Cycle Counter HI: 0
+14:58:41.002 -> Cycle Counter LO: 0
+14:58:41.002 -> Supply Voltage: 0.00 Volts
+14:58:41.002 -> Spark Ref. Num. Output 1: 0
+14:58:41.002 -> Spark Ref. Num. Output 2: 0
+14:58:41.002 -> Spark Ref. Num. Output 3: 0
+14:58:42.020 -> Reading read/write input registers...
+14:58:42.020 -> Disk+1: 5
+14:58:42.020 -> Disk Lineup to TDC: 0.00 DEG
+14:58:42.020 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+14:58:42.020 -> Purge Delay Cycles 0-255: 0
+14:58:42.020 -> RPM Over Speed Setpoint: 0
+14:58:42.020 -> RPM Crank to Run Threshold: 0
+14:58:42.020 -> Low Supply Voltage Limit: 0.00V
+14:58:42.020 -> SLAVE ANGLE: 0.00 DEG
+14:58:43.040 -> Reading misc read/write input registers...
+14:58:43.040 -> Crank Counter: 5
+14:58:43.040 -> Start Counter: 0
+14:58:43.040 -> Cycle Counter HIGH: 0
+14:58:43.040 -> Cycle Counter LOW: 0
+14:58:43.040 -> BAUD (fixed 9600): 0
+14:58:43.040 -> NODEID (fixed n81:node1): 0
+14:58:43.040 -> Cold Boot (powerup) Count: 0
+14:58:43.040 -> Warm Boot (reset) Count: 0.00Reading status bits...
+14:58:46.033 -> 1st Raw data: 5
+14:58:46.033 -> Syncing: 1
+14:58:46.033 -> InSync1: 0
+14:58:46.033 -> InSync2: 1
+14:58:46.033 -> Purging: 0
+14:58:46.033 -> Trying: 0
+14:58:46.033 -> Firing: 0
+14:58:46.033 -> LockOut: 0
+14:58:46.033 -> FIRED: 0
+14:58:47.052 -> 2nd Raw data: 5
+14:58:47.052 -> Cranking: 1
+14:58:47.052 -> Running: 0
+14:58:47.052 -> Wrong Disk: 1
+14:58:47.052 -> GLead Shutdown Grounded: 0
+14:58:47.052 -> Remote Shutdown Present: 0
+14:58:47.052 -> GLead Shutdown Logged: 0
+14:58:47.052 -> Remote Shutdown Logged: 0
+14:58:47.052 -> Overspeed Shutdown Logged: 0
+14:58:48.070 -> 3rd Raw data: 5
+14:58:48.070 -> WDOG1 Reset Latched: 1
+14:58:48.070 -> WDOG2 Reset Event: 0
+14:58:48.070 -> CheckSum Error: 1
+14:58:48.070 -> LOW Supply Voltage: 0
+14:58:48.070 -> No Charge: 0
+14:58:48.070 -> Open Primary: 0
+14:58:48.070 -> Shorted Primary: 0
+14:58:48.070 -> Open Secondary: 0
+14:58:49.054 -> Reading read only status registers...
+14:58:49.054 -> RPM: 5
+14:58:49.054 -> Timing: 0.00 DEG
+14:58:49.054 -> Switch Position: 0
+14:58:49.088 -> Current Loop Input: 0.00 mA
+14:58:49.088 -> Disk Observed X+1: 0
+14:58:49.088 -> Insertion Retard: 0.00 DEG
+14:58:49.088 -> Switch Retard: 0.00 DEG
+14:58:49.088 -> Loop Retard: 0.00 DEG
+14:58:50.068 -> RPM Retard: 0.00 DEG
+14:58:50.068 -> Total Retard: 0.00 DEG
+14:58:50.068 -> Cycle Counter HI: 0
+14:58:50.102 -> Cycle Counter LO: 0
+14:58:50.102 -> Supply Voltage: 0.00 Volts
+14:58:50.102 -> Spark Ref. Num. Output 1: 0
+14:58:50.102 -> Spark Ref. Num. Output 2: 0
+14:58:50.102 -> Spark Ref. Num. Output 3: 0
+14:58:51.083 -> Reading read/write input registers...
+14:58:51.083 -> Disk+1: 5
+14:58:51.083 -> Disk Lineup to TDC: 0.00 DEG
+14:58:51.083 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+14:58:51.117 -> Purge Delay Cycles 0-255: 0
+14:58:51.117 -> RPM Over Speed Setpoint: 0
+14:58:51.117 -> RPM Crank to Run Threshold: 0
+14:58:51.117 -> Low Supply Voltage Limit: 0.00V
+14:58:51.117 -> SLAVE ANGLE: 0.00 DEG
+14:58:52.098 -> Reading misc read/write input registers...
+14:58:52.098 -> Crank Counter: 5
+14:58:52.098 -> Start Counter: 0
+14:58:52.132 -> Cycle Counter HIGH: 0
+14:58:52.132 -> Cycle Counter LOW: 0
+14:58:52.132 -> BAUD (fixed 9600): 0
+14:58:52.132 -> NODEID (fixed n81:node1): 0
+14:58:52.132 -> Cold Boot (powerup) Count: 0
+14:58:52.132 -> Warm Boot (reset) Count: 0.00Reading status bits...
+14:58:55.117 -> 1st Raw data: 5
+14:58:55.117 -> Syncing: 1
+14:58:55.117 -> InSync1: 0
+14:58:55.117 -> InSync2: 1
+14:58:55.117 -> Purging: 0
+14:58:55.117 -> Trying: 0
+14:58:55.117 -> Firing: 0
+14:58:55.151 -> LockOut: 0
+14:58:55.151 -> FIRED: 0
+14:58:56.136 -> 2nd Raw data: 5
+14:58:56.136 -> Cranking: 1
+14:58:56.136 -> Running: 0
+14:58:56.136 -> Wrong Disk: 1
+14:58:56.136 -> GLead Shutdown Grounded: 0
+14:58:56.136 -> Remote Shutdown Present: 0
+14:58:56.136 -> GLead Shutdown Logged: 0
+14:58:56.136 -> Remote Shutdown Logged: 0
+14:58:56.136 -> Overspeed Shutdown Logged: 0
+14:58:57.155 -> 3rd Raw data: 5
+14:58:57.155 -> WDOG1 Reset Latched: 1
+14:58:57.155 -> WDOG2 Reset Event: 0
+14:58:57.155 -> CheckSum Error: 1
+14:58:57.155 -> LOW Supply Voltage: 0
+14:58:57.155 -> No Charge: 0
+14:58:57.155 -> Open Primary: 0
+14:58:57.155 -> Shorted Primary: 0
+14:58:57.155 -> Open Secondary: 0
+14:58:58.140 -> Reading read only status registers...
+14:58:58.140 -> RPM: 5
+14:58:58.174 -> Timing: 0.00 DEG
+14:58:58.174 -> Switch Position: 0
+14:58:58.174 -> Current Loop Input: 0.00 mA
+14:58:58.174 -> Disk Observed X+1: 0
+14:58:58.174 -> Insertion Retard: 0.00 DEG
+14:58:58.174 -> Switch Retard: 0.00 DEG
+14:58:58.174 -> Loop Retard: 0.00 DEG
+14:58:59.158 -> RPM Retard: 0.00 DEG
+14:58:59.158 -> Total Retard: 0.00 DEG
+14:58:59.158 -> Cycle Counter HI: 0
+14:58:59.158 -> Cycle Counter LO: 0
+14:58:59.158 -> Supply Voltage: 0.00 Volts
+14:58:59.158 -> Spark Ref. Num. Output 1: 0
+14:58:59.192 -> Spark Ref. Num. Output 2: 0
+14:58:59.192 -> Spark Ref. Num. Output 3: 0
+14:59:00.178 -> Reading read/write input registers...
+14:59:00.178 -> Disk+1: 5
+14:59:00.178 -> Disk Lineup to TDC: 0.00 DEG
+14:59:00.178 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+14:59:00.178 -> Purge Delay Cycles 0-255: 0
+14:59:00.178 -> RPM Over Speed Setpoint: 0
+14:59:00.178 -> RPM Crank to Run Threshold: 0
+14:59:00.178 -> Low Supply Voltage Limit: 0.00V
+14:59:00.212 -> SLAVE ANGLE: 0.00 DEG
+14:59:01.203 -> Reading misc read/write input registers...
+14:59:01.203 -> Crank Counter: 5
+14:59:01.203 -> Start Counter: 0
+14:59:01.203 -> Cycle Counter HIGH: 0
+14:59:01.203 -> Cycle Counter LOW: 0
+14:59:01.203 -> BAUD (fixed 9600): 0
+14:59:01.203 -> NODEID (fixed n81:node1): 0
+14:59:01.203 -> Cold Boot (powerup) Count: 0
+14:59:01.203 -> Warm Boot (reset) Count: 0.00Reading status bits...
+14:59:04.228 -> 1st Raw data: 5
+14:59:04.228 -> Syncing: 1
+14:59:04.228 -> InSync1: 0
+14:59:04.228 -> InSync2: 1
+14:59:04.228 -> Purging: 0
+14:59:04.228 -> Trying: 0
+14:59:04.228 -> Firing: 0
+14:59:04.228 -> LockOut: 0
+14:59:04.228 -> FIRED: 0
+14:59:05.212 -> 2nd Raw data: 5
+14:59:05.212 -> Cranking: 1
+14:59:05.212 -> Running: 0
+14:59:05.212 -> Wrong Disk: 1
+14:59:05.212 -> GLead Shutdown Grounded: 0
+14:59:05.212 -> Remote Shutdown Present: 0
+14:59:05.212 -> GLead Shutdown Logged: 0
+14:59:05.212 -> Remote Shutdown Logged: 0
+14:59:05.247 -> Overspeed Shutdown Logged: 0
+14:59:06.230 -> 3rd Raw data: 5
+14:59:06.230 -> WDOG1 Reset Latched: 1
+14:59:06.230 -> WDOG2 Reset Event: 0
+14:59:06.230 -> CheckSum Error: 1
+14:59:06.230 -> LOW Supply Voltage: 0
+14:59:06.230 -> No Charge: 0
+14:59:06.230 -> Open Primary: 0
+14:59:06.230 -> Shorted Primary: 0
+14:59:06.230 -> Open Secondary: 0
+14:59:07.249 -> Reading read only status registers...
+14:59:07.249 -> RPM: 5
+14:59:07.249 -> Timing: 0.00 DEG
+14:59:07.249 -> Switch Position: 0
+14:59:07.249 -> Current Loop Input: 0.00 mA
+14:59:07.249 -> Disk Observed X+1: 0
+14:59:07.249 -> Insertion Retard: 0.00 DEG
+14:59:07.249 -> Switch Retard: 0.00 DEG
+14:59:07.249 -> Loop Retard: 0.00 DEG
+14:59:08.267 -> RPM Retard: 0.00 DEG
+14:59:08.267 -> Total Retard: 0.00 DEG
+14:59:08.267 -> Cycle Counter HI: 0
+14:59:08.267 -> Cycle Counter LO: 0
+14:59:08.267 -> Supply Voltage: 0.00 Volts
+14:59:08.267 -> Spark Ref. Num. Output 1: 0
+14:59:08.267 -> Spark Ref. Num. Output 2: 0
+14:59:08.267 -> Spark Ref. Num. Output 3: 0
+14:59:09.251 -> Reading read/write input registers...
+14:59:09.251 -> Disk+1: 5
+14:59:09.285 -> Disk Lineup to TDC: 0.00 DEG
+14:59:09.285 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+14:59:09.285 -> Purge Delay Cycles 0-255: 0
+14:59:09.285 -> RPM Over Speed Setpoint: 0
+14:59:09.285 -> RPM Crank to Run Threshold: 0
+14:59:09.285 -> Low Supply Voltage Limit: 0.00V
+14:59:09.285 -> SLAVE ANGLE: 0.00 DEG
+14:59:10.270 -> Reading misc read/write input registers...
+14:59:10.270 -> Crank Counter: 5
+14:59:10.270 -> Start Counter: 0
+14:59:10.270 -> Cycle Counter HIGH: 0
+14:59:10.304 -> Cycle Counter LOW: 0
+14:59:10.304 -> BAUD (fixed 9600): 0
+14:59:10.304 -> NODEID (fixed n81:node1): 0
+14:59:10.304 -> Cold Boot (powerup) Count: 0
+14:59:10.304 -> Warm Boot (reset) Count: 0.00Reading status bits...
+14:59:13.293 -> 1st Raw data: 5
+14:59:13.293 -> Syncing: 1
+14:59:13.293 -> InSync1: 0
+14:59:13.293 -> InSync2: 1
+14:59:13.293 -> Purging: 0
+14:59:13.293 -> Trying: 0
+14:59:13.293 -> Firing: 0
+14:59:13.293 -> LockOut: 0
+14:59:13.293 -> FIRED: 0
+14:59:14.313 -> 2nd Raw data: 5
+14:59:14.313 -> Cranking: 1
+14:59:14.313 -> Running: 0
+14:59:14.313 -> Wrong Disk: 1
+14:59:14.313 -> GLead Shutdown Grounded: 0
+14:59:14.313 -> Remote Shutdown Present: 0
+14:59:14.313 -> GLead Shutdown Logged: 0
+14:59:14.313 -> Remote Shutdown Logged: 0
+14:59:14.313 -> Overspeed Shutdown Logged: 0
+14:59:15.332 -> 3rd Raw data: 5
+14:59:15.332 -> WDOG1 Reset Latched: 1
+14:59:15.332 -> WDOG2 Reset Event: 0
+14:59:15.332 -> CheckSum Error: 1
+14:59:15.332 -> LOW Supply Voltage: 0
+14:59:15.332 -> No Charge: 0
+14:59:15.332 -> Open Primary: 0
+14:59:15.332 -> Shorted Primary: 0
+14:59:15.332 -> Open Secondary: 0
+14:59:16.317 -> Reading read only status registers...
+14:59:16.317 -> RPM: 5
+14:59:16.317 -> Timing: 0.00 DEG
+14:59:16.317 -> Switch Position: 0
+14:59:16.317 -> Current Loop Input: 0.00 mA
+14:59:16.351 -> Disk Observed X+1: 0
+14:59:16.351 -> Insertion Retard: 0.00 DEG
+14:59:16.351 -> Switch Retard: 0.00 DEG
+14:59:16.351 -> Loop Retard: 0.00 DEG
+14:59:17.335 -> RPM Retard: 0.00 DEG
+14:59:17.335 -> Total Retard: 0.00 DEG
+14:59:17.335 -> Cycle Counter HI: 0
+14:59:17.335 -> Cycle Counter LO: 0
+14:59:17.335 -> Supply Voltage: 0.00 Volts
+14:59:17.335 -> Spark Ref. Num. Output 1: 0
+14:59:17.335 -> Spark Ref. Num. Output 2: 0
+14:59:17.335 -> Spark Ref. Num. Output 3: 0
+14:59:18.355 -> Reading read/write input registers...
+14:59:18.355 -> Disk+1: 5
+14:59:18.355 -> Disk Lineup to TDC: 0.00 DEG
+14:59:18.355 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+14:59:18.355 -> Purge Delay Cycles 0-255: 0
+14:59:18.355 -> RPM Over Speed Setpoint: 0
+14:59:18.355 -> RPM Crank to Run Threshold: 0
+14:59:18.355 -> Low Supply Voltage Limit: 0.00V
+14:59:18.355 -> SLAVE ANGLE: 0.00 DEG
+14:59:19.375 -> Reading misc read/write input registers...
+14:59:19.375 -> Crank Counter: 5
+14:59:19.375 -> Start Counter: 0
+14:59:19.375 -> Cycle Counter HIGH: 0
+14:59:19.375 -> Cycle Counter LOW: 0
+14:59:19.375 -> BAUD (fixed 9600): 0
+14:59:19.375 -> NODEID (fixed n81:node1): 0
+14:59:19.375 -> Cold Boot (powerup) Count: 0
+14:59:19.375 -> Warm Boot (reset) Count: 0.00Reading status bits...
+14:59:22.400 -> 1st Raw data: 5
+14:59:22.400 -> Syncing: 1
+14:59:22.400 -> InSync1: 0
+14:59:22.400 -> InSync2: 1
+14:59:22.400 -> Purging: 0
+14:59:22.400 -> Trying: 0
+14:59:22.400 -> Firing: 0
+14:59:22.400 -> LockOut: 0
+14:59:22.400 -> FIRED: 0
+14:59:23.385 -> 2nd Raw data: 5
+14:59:23.385 -> Cranking: 1
+14:59:23.385 -> Running: 0
+14:59:23.385 -> Wrong Disk: 1
+14:59:23.385 -> GLead Shutdown Grounded: 0
+14:59:23.385 -> Remote Shutdown Present: 0
+14:59:23.385 -> GLead Shutdown Logged: 0
+14:59:23.385 -> Remote Shutdown Logged: 0
+14:59:23.419 -> Overspeed Shutdown Logged: 0
+14:59:24.404 -> 3rd Raw data: 5
+14:59:24.404 -> WDOG1 Reset Latched: 1
+14:59:24.404 -> WDOG2 Reset Event: 0
+14:59:24.404 -> CheckSum Error: 1
+14:59:24.404 -> LOW Supply Voltage: 0
+14:59:24.404 -> No Charge: 0
+14:59:24.404 -> Open Primary: 0
+14:59:24.404 -> Shorted Primary: 0
+14:59:24.404 -> Open Secondary: 0
+14:59:25.423 -> Reading read only status registers...
+14:59:25.423 -> RPM: 5
+14:59:25.423 -> Timing: 0.00 DEG
+14:59:25.423 -> Switch Position: 0
+14:59:25.423 -> Current Loop Input: 0.00 mA
+14:59:25.423 -> Disk Observed X+1: 0
+14:59:25.423 -> Insertion Retard: 0.00 DEG
+14:59:25.423 -> Switch Retard: 0.00 DEG
+14:59:25.423 -> Loop Retard: 0.00 DEG
+14:59:26.408 -> RPM Retard: 0.00 DEG
+14:59:26.442 -> Total Retard: 0.00 DEG
+14:59:26.442 -> Cycle Counter HI: 0
+14:59:26.442 -> Cycle Counter LO: 0
+14:59:26.442 -> Supply Voltage: 0.00 Volts
+14:59:26.442 -> Spark Ref. Num. Output 1: 0
+14:59:26.442 -> Spark Ref. Num. Output 2: 0
+14:59:26.442 -> Spark Ref. Num. Output 3: 0
+14:59:27.427 -> Reading read/write input registers...
+14:59:27.427 -> Disk+1: 5
+14:59:27.427 -> Disk Lineup to TDC: 0.00 DEG
+14:59:27.427 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+14:59:27.461 -> Purge Delay Cycles 0-255: 0
+14:59:27.461 -> RPM Over Speed Setpoint: 0
+14:59:27.461 -> RPM Crank to Run Threshold: 0
+14:59:27.461 -> Low Supply Voltage Limit: 0.00V
+14:59:27.461 -> SLAVE ANGLE: 0.00 DEG
+14:59:28.447 -> Reading misc read/write input registers...
+14:59:28.447 -> Crank Counter: 5
+14:59:28.447 -> Start Counter: 0
+14:59:28.447 -> Cycle Counter HIGH: 0
+14:59:28.447 -> Cycle Counter LOW: 0
+14:59:28.447 -> BAUD (fixed 9600): 0
+14:59:28.481 -> NODEID (fixed n81:node1): 0
+14:59:28.481 -> Cold Boot (powerup) Count: 0
+14:59:28.481 -> Warm Boot (reset) Count: 0.00Reading status bits...
+14:59:31.473 -> 1st Raw data: 5
+14:59:31.473 -> Syncing: 1
+14:59:31.473 -> InSync1: 0
+14:59:31.473 -> InSync2: 1
+14:59:31.473 -> Purging: 0
+14:59:31.473 -> Trying: 0
+14:59:31.473 -> Firing: 0
+14:59:31.473 -> LockOut: 0
+14:59:31.473 -> FIRED: 0
+14:59:32.493 -> 2nd Raw data: 5
+14:59:32.493 -> Cranking: 1
+14:59:32.493 -> Running: 0
+14:59:32.493 -> Wrong Disk: 1
+14:59:32.493 -> GLead Shutdown Grounded: 0
+14:59:32.493 -> Remote Shutdown Present: 0
+14:59:32.493 -> GLead Shutdown Logged: 0
+14:59:32.493 -> Remote Shutdown Logged: 0
+14:59:32.493 -> Overspeed Shutdown Logged: 0
+14:59:33.477 -> 3rd Raw data: 5
+14:59:33.477 -> WDOG1 Reset Latched: 1
+14:59:33.477 -> WDOG2 Reset Event: 0
+14:59:33.477 -> CheckSum Error: 1
+14:59:33.477 -> LOW Supply Voltage: 0
+14:59:33.512 -> No Charge: 0
+14:59:33.512 -> Open Primary: 0
+14:59:33.512 -> Shorted Primary: 0
+14:59:33.512 -> Open Secondary: 0
+14:59:34.497 -> Reading read only status registers...
+14:59:34.497 -> RPM: 5
+14:59:34.497 -> Timing: 0.00 DEG
+14:59:34.497 -> Switch Position: 0
+14:59:34.497 -> Current Loop Input: 0.00 mA
+14:59:34.497 -> Disk Observed X+1: 0
+14:59:34.497 -> Insertion Retard: 0.00 DEG
+14:59:34.497 -> Switch Retard: 0.00 DEG
+14:59:34.497 -> Loop Retard: 0.00 DEG
+14:59:35.517 -> RPM Retard: 0.00 DEG
+14:59:35.517 -> Total Retard: 0.00 DEG
+14:59:35.517 -> Cycle Counter HI: 0
+14:59:35.517 -> Cycle Counter LO: 0
+14:59:35.517 -> Supply Voltage: 0.00 Volts
+14:59:35.517 -> Spark Ref. Num. Output 1: 0
+14:59:35.517 -> Spark Ref. Num. Output 2: 0
+14:59:35.517 -> Spark Ref. Num. Output 3: 0
+14:59:36.537 -> Reading read/write input registers...
+14:59:36.537 -> Disk+1: 5
+14:59:36.537 -> Disk Lineup to TDC: 0.00 DEG
+14:59:36.537 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+14:59:36.537 -> Purge Delay Cycles 0-255: 0
+14:59:36.537 -> RPM Over Speed Setpoint: 0
+14:59:36.537 -> RPM Crank to Run Threshold: 0
+14:59:36.537 -> Low Supply Voltage Limit: 0.00V
+14:59:36.537 -> SLAVE ANGLE: 0.00 DEG
+14:59:37.555 -> Reading misc read/write input registers...
+14:59:37.555 -> Crank Counter: 5
+14:59:37.555 -> Start Counter: 0
+14:59:37.555 -> Cycle Counter HIGH: 0
+14:59:37.555 -> Cycle Counter LOW: 0
+14:59:37.555 -> BAUD (fixed 9600): 0
+14:59:37.555 -> NODEID (fixed n81:node1): 0
+14:59:37.555 -> Cold Boot (powerup) Count: 0
+14:59:37.555 -> Warm Boot (reset) Count: 0.00Reading status bits...
+14:59:40.546 -> 1st Raw data: 5
+14:59:40.546 -> Syncing: 1
+14:59:40.546 -> InSync1: 0
+14:59:40.546 -> InSync2: 1
+14:59:40.546 -> Purging: 0
+14:59:40.546 -> Trying: 0
+14:59:40.580 -> Firing: 0
+14:59:40.580 -> LockOut: 0
+14:59:40.580 -> FIRED: 0
+14:59:41.564 -> 2nd Raw data: 5
+14:59:41.564 -> Cranking: 1
+14:59:41.564 -> Running: 0
+14:59:41.564 -> Wrong Disk: 1
+14:59:41.564 -> GLead Shutdown Grounded: 0
+14:59:41.564 -> Remote Shutdown Present: 0
+14:59:41.564 -> GLead Shutdown Logged: 0
+14:59:41.564 -> Remote Shutdown Logged: 0
+14:59:41.564 -> Overspeed Shutdown Logged: 0
+14:59:42.584 -> 3rd Raw data: 5
+14:59:42.584 -> WDOG1 Reset Latched: 1
+14:59:42.584 -> WDOG2 Reset Event: 0
+14:59:42.584 -> CheckSum Error: 1
+14:59:42.584 -> LOW Supply Voltage: 0
+14:59:42.584 -> No Charge: 0
+14:59:42.584 -> Open Primary: 0
+14:59:42.584 -> Shorted Primary: 0
+14:59:42.584 -> Open Secondary: 0
+14:59:43.570 -> Reading read only status registers...
+14:59:43.604 -> RPM: 5
+14:59:43.604 -> Timing: 0.00 DEG
+14:59:43.604 -> Switch Position: 0
+14:59:43.604 -> Current Loop Input: 0.00 mA
+14:59:43.604 -> Disk Observed X+1: 0
+14:59:43.604 -> Insertion Retard: 0.00 DEG
+14:59:43.604 -> Switch Retard: 0.00 DEG
+14:59:43.604 -> Loop Retard: 0.00 DEG
+14:59:44.589 -> RPM Retard: 0.00 DEG
+14:59:44.589 -> Total Retard: 0.00 DEG
+14:59:44.589 -> Cycle Counter HI: 0
+14:59:44.589 -> Cycle Counter LO: 0
+14:59:44.589 -> Supply Voltage: 0.00 Volts
+14:59:44.589 -> Spark Ref. Num. Output 1: 0
+14:59:44.623 -> Spark Ref. Num. Output 2: 0
+14:59:44.623 -> Spark Ref. Num. Output 3: 0
+14:59:45.606 -> Reading read/write input registers...
+14:59:45.606 -> Disk+1: 5
+14:59:45.606 -> Disk Lineup to TDC: 0.00 DEG
+14:59:45.606 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+14:59:45.606 -> Purge Delay Cycles 0-255: 0
+14:59:45.606 -> RPM Over Speed Setpoint: 0
+14:59:45.643 -> RPM Crank to Run Threshold: 0
+14:59:45.643 -> Low Supply Voltage Limit: 0.00V
+14:59:45.643 -> SLAVE ANGLE: 0.00 DEG
+14:59:46.629 -> Reading misc read/write input registers...
+14:59:46.629 -> Crank Counter: 5
+14:59:46.629 -> Start Counter: 0
+14:59:46.629 -> Cycle Counter HIGH: 0
+14:59:46.629 -> Cycle Counter LOW: 0
+14:59:46.629 -> BAUD (fixed 9600): 0
+14:59:46.629 -> NODEID (fixed n81:node1): 0
+14:59:46.629 -> Cold Boot (powerup) Count: 0
+14:59:46.629 -> Warm Boot (reset) Count: 0.00Reading status bits...
+14:59:49.651 -> 1st Raw data: 5
+14:59:49.651 -> Syncing: 1
+14:59:49.651 -> InSync1: 0
+14:59:49.651 -> InSync2: 1
+14:59:49.651 -> Purging: 0
+14:59:49.651 -> Trying: 0
+14:59:49.651 -> Firing: 0
+14:59:49.651 -> LockOut: 0
+14:59:49.651 -> FIRED: 0
+14:59:50.636 -> 2nd Raw data: 5
+14:59:50.636 -> Cranking: 1
+14:59:50.636 -> Running: 0
+14:59:50.636 -> Wrong Disk: 1
+14:59:50.670 -> GLead Shutdown Grounded: 0
+14:59:50.670 -> Remote Shutdown Present: 0
+14:59:50.670 -> GLead Shutdown Logged: 0
+14:59:50.670 -> Remote Shutdown Logged: 0
+14:59:50.670 -> Overspeed Shutdown Logged: 0
+14:59:51.656 -> 3rd Raw data: 5
+14:59:51.656 -> WDOG1 Reset Latched: 1
+14:59:51.656 -> WDOG2 Reset Event: 0
+14:59:51.656 -> CheckSum Error: 1
+14:59:51.656 -> LOW Supply Voltage: 0
+14:59:51.656 -> No Charge: 0
+14:59:51.656 -> Open Primary: 0
+14:59:51.656 -> Shorted Primary: 0
+14:59:51.692 -> Open Secondary: 0
+14:59:52.677 -> Reading read only status registers...
+14:59:52.677 -> RPM: 5
+14:59:52.677 -> Timing: 0.00 DEG
+14:59:52.677 -> Switch Position: 0
+14:59:52.677 -> Current Loop Input: 0.00 mA
+14:59:52.677 -> Disk Observed X+1: 0
+14:59:52.677 -> Insertion Retard: 0.00 DEG
+14:59:52.677 -> Switch Retard: 0.00 DEG
+14:59:52.677 -> Loop Retard: 0.00 DEG
+14:59:53.664 -> RPM Retard: 0.00 DEG
+14:59:53.698 -> Total Retard: 0.00 DEG
+14:59:53.698 -> Cycle Counter HI: 0
+14:59:53.698 -> Cycle Counter LO: 0
+14:59:53.698 -> Supply Voltage: 0.00 Volts
+14:59:53.698 -> Spark Ref. Num. Output 1: 0
+14:59:53.698 -> Spark Ref. Num. Output 2: 0
+14:59:53.698 -> Spark Ref. Num. Output 3: 0
+14:59:54.680 -> Reading read/write input registers...
+14:59:54.680 -> Disk+1: 5
+14:59:54.714 -> Disk Lineup to TDC: 0.00 DEG
+14:59:54.714 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+14:59:54.714 -> Purge Delay Cycles 0-255: 0
+14:59:54.714 -> RPM Over Speed Setpoint: 0
+14:59:54.714 -> RPM Crank to Run Threshold: 0
+14:59:54.714 -> Low Supply Voltage Limit: 0.00V
+14:59:54.714 -> SLAVE ANGLE: 0.00 DEG
+14:59:55.697 -> Reading misc read/write input registers...
+14:59:55.731 -> Crank Counter: 5
+14:59:55.731 -> Start Counter: 0
+14:59:55.731 -> Cycle Counter HIGH: 0
+14:59:55.731 -> Cycle Counter LOW: 0
+14:59:55.731 -> BAUD (fixed 9600): 0
+14:59:55.731 -> NODEID (fixed n81:node1): 0
+14:59:55.731 -> Cold Boot (powerup) Count: 0
+14:59:55.731 -> Warm Boot (reset) Count: 0.00Reading status bits...
+14:59:58.716 -> 1st Raw data: 5
+14:59:58.716 -> Syncing: 1
+14:59:58.716 -> InSync1: 0
+14:59:58.750 -> InSync2: 1
+14:59:58.750 -> Purging: 0
+14:59:58.750 -> Trying: 0
+14:59:58.750 -> Firing: 0
+14:59:58.750 -> LockOut: 0
+14:59:58.750 -> FIRED: 0
+14:59:59.733 -> 2nd Raw data: 5
+14:59:59.733 -> Cranking: 1
+14:59:59.733 -> Running: 0
+14:59:59.733 -> Wrong Disk: 1
+14:59:59.733 -> GLead Shutdown Grounded: 0
+14:59:59.733 -> Remote Shutdown Present: 0
+14:59:59.733 -> GLead Shutdown Logged: 0
+14:59:59.733 -> Remote Shutdown Logged: 0
+14:59:59.733 -> Overspeed Shutdown Logged: 0
+15:00:00.753 -> 3rd Raw data: 5
+15:00:00.753 -> WDOG1 Reset Latched: 1
+15:00:00.753 -> WDOG2 Reset Event: 0
+15:00:00.753 -> CheckSum Error: 1
+15:00:00.753 -> LOW Supply Voltage: 0
+15:00:00.753 -> No Charge: 0
+15:00:00.753 -> Open Primary: 0
+15:00:00.753 -> Shorted Primary: 0
+15:00:00.753 -> Open Secondary: 0
+15:00:01.772 -> Reading read only status registers...
+15:00:01.772 -> RPM: 5
+15:00:01.772 -> Timing: 0.00 DEG
+15:00:01.772 -> Switch Position: 0
+15:00:01.772 -> Current Loop Input: 0.00 mA
+15:00:01.772 -> Disk Observed X+1: 0
+15:00:01.772 -> Insertion Retard: 0.00 DEG
+15:00:01.772 -> Switch Retard: 0.00 DEG
+15:00:01.772 -> Loop Retard: 0.00 DEG
+15:00:02.756 -> RPM Retard: 0.00 DEG
+15:00:02.756 -> Total Retard: 0.00 DEG
+15:00:02.790 -> Cycle Counter HI: 0
+15:00:02.790 -> Cycle Counter LO: 0
+15:00:02.790 -> Supply Voltage: 0.00 Volts
+15:00:02.790 -> Spark Ref. Num. Output 1: 0
+15:00:02.790 -> Spark Ref. Num. Output 2: 0
+15:00:02.790 -> Spark Ref. Num. Output 3: 0
+15:00:03.774 -> Reading read/write input registers...
+15:00:03.774 -> Disk+1: 5
+15:00:03.774 -> Disk Lineup to TDC: 0.00 DEG
+15:00:03.774 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+15:00:03.774 -> Purge Delay Cycles 0-255: 0
+15:00:03.808 -> RPM Over Speed Setpoint: 0
+15:00:03.808 -> RPM Crank to Run Threshold: 0
+15:00:03.808 -> Low Supply Voltage Limit: 0.00V
+15:00:03.808 -> SLAVE ANGLE: 0.00 DEG
+15:00:04.792 -> Reading misc read/write input registers...
+15:00:04.792 -> Crank Counter: 5
+15:00:04.792 -> Start Counter: 0
+15:00:04.792 -> Cycle Counter HIGH: 0
+15:00:04.792 -> Cycle Counter LOW: 0
+15:00:04.792 -> BAUD (fixed 9600): 0
+15:00:04.792 -> NODEID (fixed n81:node1): 0
+15:00:04.826 -> Cold Boot (powerup) Count: 0
+15:00:04.826 -> Warm Boot (reset) Count: 0.00Reading status bits...
+15:00:07.817 -> 1st Raw data: 5
+15:00:07.817 -> Syncing: 1
+15:00:07.817 -> InSync1: 0
+15:00:07.817 -> InSync2: 1
+15:00:07.817 -> Purging: 0
+15:00:07.817 -> Trying: 0
+15:00:07.817 -> Firing: 0
+15:00:07.817 -> LockOut: 0
+15:00:07.817 -> FIRED: 0
+15:00:08.801 -> 2nd Raw data: 5
+15:00:08.835 -> Cranking: 1
+15:00:08.835 -> Running: 0
+15:00:08.835 -> Wrong Disk: 1
+15:00:08.835 -> GLead Shutdown Grounded: 0
+15:00:08.835 -> Remote Shutdown Present: 0
+15:00:08.835 -> GLead Shutdown Logged: 0
+15:00:08.835 -> Remote Shutdown Logged: 0
+15:00:08.835 -> Overspeed Shutdown Logged: 0
+15:00:09.821 -> 3rd Raw data: 5
+15:00:09.821 -> WDOG1 Reset Latched: 1
+15:00:09.821 -> WDOG2 Reset Event: 0
+15:00:09.821 -> CheckSum Error: 1
+15:00:09.821 -> LOW Supply Voltage: 0
+15:00:09.855 -> No Charge: 0
+15:00:09.855 -> Open Primary: 0
+15:00:09.855 -> Shorted Primary: 0
+15:00:09.855 -> Open Secondary: 0
+15:00:10.841 -> Reading read only status registers...
+15:00:10.841 -> RPM: 5
+15:00:10.841 -> Timing: 0.00 DEG
+15:00:10.841 -> Switch Position: 0
+15:00:10.841 -> Current Loop Input: 0.00 mA
+15:00:10.841 -> Disk Observed X+1: 0
+15:00:10.841 -> Insertion Retard: 0.00 DEG
+15:00:10.841 -> Switch Retard: 0.00 DEG
+15:00:10.841 -> Loop Retard: 0.00 DEG
+15:00:11.862 -> RPM Retard: 0.00 DEG
+15:00:11.862 -> Total Retard: 0.00 DEG
+15:00:11.862 -> Cycle Counter HI: 0
+15:00:11.862 -> Cycle Counter LO: 0
+15:00:11.862 -> Supply Voltage: 0.00 Volts
+15:00:11.862 -> Spark Ref. Num. Output 1: 0
+15:00:11.862 -> Spark Ref. Num. Output 2: 0
+15:00:11.862 -> Spark Ref. Num. Output 3: 0
+15:00:12.881 -> Reading read/write input registers...
+15:00:12.881 -> Disk+1: 5
+15:00:12.881 -> Disk Lineup to TDC: 0.00 DEG
+15:00:12.881 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+15:00:12.881 -> Purge Delay Cycles 0-255: 0
+15:00:12.881 -> RPM Over Speed Setpoint: 0
+15:00:12.881 -> RPM Crank to Run Threshold: 0
+15:00:12.881 -> Low Supply Voltage Limit: 0.00V
+15:00:12.881 -> SLAVE ANGLE: 0.00 DEG
+15:00:13.899 -> Reading misc read/write input registers...
+15:00:13.899 -> Crank Counter: 5
+15:00:13.899 -> Start Counter: 0
+15:00:13.899 -> Cycle Counter HIGH: 0
+15:00:13.899 -> Cycle Counter LOW: 0
+15:00:13.899 -> BAUD (fixed 9600): 0
+15:00:13.899 -> NODEID (fixed n81:node1): 0
+15:00:13.899 -> Cold Boot (powerup) Count: 0
+15:00:13.899 -> Warm Boot (reset) Count: 0.00Reading status bits...
+15:00:16.916 -> 1st Raw data: 5
+15:00:16.916 -> Syncing: 1
+15:00:16.916 -> InSync1: 0
+15:00:16.916 -> InSync2: 1
+15:00:16.916 -> Purging: 0
+15:00:16.916 -> Trying: 0
+15:00:16.916 -> Firing: 0
+15:00:16.916 -> LockOut: 0
+15:00:16.916 -> FIRED: 0
+15:00:17.901 -> 2nd Raw data: 5
+15:00:17.901 -> Cranking: 1
+15:00:17.901 -> Running: 0
+15:00:17.901 -> Wrong Disk: 1
+15:00:17.901 -> GLead Shutdown Grounded: 0
+15:00:17.901 -> Remote Shutdown Present: 0
+15:00:17.901 -> GLead Shutdown Logged: 0
+15:00:17.935 -> Remote Shutdown Logged: 0
+15:00:17.935 -> Overspeed Shutdown Logged: 0
+15:00:18.918 -> 3rd Raw data: 5
+15:00:18.918 -> WDOG1 Reset Latched: 1
+15:00:18.918 -> WDOG2 Reset Event: 0
+15:00:18.918 -> CheckSum Error: 1
+15:00:18.918 -> LOW Supply Voltage: 0
+15:00:18.918 -> No Charge: 0
+15:00:18.918 -> Open Primary: 0
+15:00:18.918 -> Shorted Primary: 0
+15:00:18.918 -> Open Secondary: 0
+15:00:19.936 -> Reading read only status registers...
+15:00:19.936 -> RPM: 5
+15:00:19.936 -> Timing: 0.00 DEG
+15:00:19.936 -> Switch Position: 0
+15:00:19.936 -> Current Loop Input: 0.00 mA
+15:00:19.936 -> Disk Observed X+1: 0
+15:00:19.936 -> Insertion Retard: 0.00 DEG
+15:00:19.936 -> Switch Retard: 0.00 DEG
+15:00:19.936 -> Loop Retard: 0.00 DEG
+15:00:20.956 -> RPM Retard: 0.00 DEG
+15:00:20.956 -> Total Retard: 0.00 DEG
+15:00:20.956 -> Cycle Counter HI: 0
+15:00:20.956 -> Cycle Counter LO: 0
+15:00:20.956 -> Supply Voltage: 0.00 Volts
+15:00:20.956 -> Spark Ref. Num. Output 1: 0
+15:00:20.956 -> Spark Ref. Num. Output 2: 0
+15:00:20.956 -> Spark Ref. Num. Output 3: 0
+15:00:21.942 -> Reading read/write input registers...
+15:00:21.942 -> Disk+1: 5
+15:00:21.942 -> Disk Lineup to TDC: 0.00 DEG
+15:00:21.976 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+15:00:21.976 -> Purge Delay Cycles 0-255: 0
+15:00:21.976 -> RPM Over Speed Setpoint: 0
+15:00:21.976 -> RPM Crank to Run Threshold: 0
+15:00:21.976 -> Low Supply Voltage Limit: 0.00V
+15:00:21.976 -> SLAVE ANGLE: 0.00 DEG
+15:00:22.962 -> Reading misc read/write input registers...
+15:00:22.962 -> Crank Counter: 5
+15:00:22.962 -> Start Counter: 0
+15:00:22.962 -> Cycle Counter HIGH: 0
+15:00:22.962 -> Cycle Counter LOW: 0
+15:00:22.996 -> BAUD (fixed 9600): 0
+15:00:22.996 -> NODEID (fixed n81:node1): 0
+15:00:22.996 -> Cold Boot (powerup) Count: 0
+15:00:22.996 -> Warm Boot (reset) Count: 0.00Reading status bits...
+15:00:25.988 -> 1st Raw data: 5
+15:00:25.988 -> Syncing: 1
+15:00:25.988 -> InSync1: 0
+15:00:25.988 -> InSync2: 1
+15:00:25.988 -> Purging: 0
+15:00:25.988 -> Trying: 0
+15:00:25.988 -> Firing: 0
+15:00:25.988 -> LockOut: 0
+15:00:25.988 -> FIRED: 0
+15:00:27.007 -> 2nd Raw data: 5
+15:00:27.007 -> Cranking: 1
+15:00:27.007 -> Running: 0
+15:00:27.007 -> Wrong Disk: 1
+15:00:27.007 -> GLead Shutdown Grounded: 0
+15:00:27.007 -> Remote Shutdown Present: 0
+15:00:27.007 -> GLead Shutdown Logged: 0
+15:00:27.007 -> Remote Shutdown Logged: 0
+15:00:27.007 -> Overspeed Shutdown Logged: 0
+15:00:27.993 -> 3rd Raw data: 5
+15:00:27.993 -> WDOG1 Reset Latched: 1
+15:00:27.993 -> WDOG2 Reset Event: 0
+15:00:28.026 -> CheckSum Error: 1
+15:00:28.026 -> LOW Supply Voltage: 0
+15:00:28.026 -> No Charge: 0
+15:00:28.026 -> Open Primary: 0
+15:00:28.026 -> Shorted Primary: 0
+15:00:28.026 -> Open Secondary: 0
+15:00:29.011 -> Reading read only status registers...
+15:00:29.011 -> RPM: 5
+15:00:29.011 -> Timing: 0.00 DEG
+15:00:29.011 -> Switch Position: 0
+15:00:29.011 -> Current Loop Input: 0.00 mA
+15:00:29.011 -> Disk Observed X+1: 0
+15:00:29.011 -> Insertion Retard: 0.00 DEG
+15:00:29.011 -> Switch Retard: 0.00 DEG
+15:00:29.045 -> Loop Retard: 0.00 DEG
+15:00:30.030 -> RPM Retard: 0.00 DEG
+15:00:30.030 -> Total Retard: 0.00 DEG
+15:00:30.030 -> Cycle Counter HI: 0
+15:00:30.030 -> Cycle Counter LO: 0
+15:00:30.030 -> Supply Voltage: 0.00 Volts
+15:00:30.030 -> Spark Ref. Num. Output 1: 0
+15:00:30.030 -> Spark Ref. Num. Output 2: 0
+15:00:30.030 -> Spark Ref. Num. Output 3: 0
+15:00:31.050 -> Reading read/write input registers...
+15:00:31.050 -> Disk+1: 5
+15:00:31.050 -> Disk Lineup to TDC: 0.00 DEG
+15:00:31.050 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+15:00:31.050 -> Purge Delay Cycles 0-255: 0
+15:00:31.050 -> RPM Over Speed Setpoint: 0
+15:00:31.050 -> RPM Crank to Run Threshold: 0
+15:00:31.050 -> Low Supply Voltage Limit: 0.00V
+15:00:31.050 -> SLAVE ANGLE: 0.00 DEG
+15:00:32.070 -> Reading misc read/write input registers...
+15:00:32.070 -> Crank Counter: 5
+15:00:32.070 -> Start Counter: 0
+15:00:32.070 -> Cycle Counter HIGH: 0
+15:00:32.070 -> Cycle Counter LOW: 0
+15:00:32.070 -> BAUD (fixed 9600): 0
+15:00:32.070 -> NODEID (fixed n81:node1): 0
+15:00:32.070 -> Cold Boot (powerup) Count: 0
+15:00:32.070 -> Warm Boot (reset) Count: 0.00Reading status bits...
+15:00:35.061 -> 1st Raw data: 5
+15:00:35.061 -> Syncing: 1
+15:00:35.061 -> InSync1: 0
+15:00:35.061 -> InSync2: 1
+15:00:35.095 -> Purging: 0
+15:00:35.095 -> Trying: 0
+15:00:35.095 -> Firing: 0
+15:00:35.095 -> LockOut: 0
+15:00:35.095 -> FIRED: 0
+15:00:36.081 -> 2nd Raw data: 5
+15:00:36.081 -> Cranking: 1
+15:00:36.081 -> Running: 0
+15:00:36.081 -> Wrong Disk: 1
+15:00:36.081 -> GLead Shutdown Grounded: 0
+15:00:36.081 -> Remote Shutdown Present: 0
+15:00:36.081 -> GLead Shutdown Logged: 0
+15:00:36.081 -> Remote Shutdown Logged: 0
+15:00:36.081 -> Overspeed Shutdown Logged: 0
+15:00:37.101 -> 3rd Raw data: 5
+15:00:37.101 -> WDOG1 Reset Latched: 1
+15:00:37.101 -> WDOG2 Reset Event: 0
+15:00:37.101 -> CheckSum Error: 1
+15:00:37.101 -> LOW Supply Voltage: 0
+15:00:37.101 -> No Charge: 0
+15:00:37.101 -> Open Primary: 0
+15:00:37.101 -> Shorted Primary: 0
+15:00:37.101 -> Open Secondary: 0
+15:00:38.087 -> Reading read only status registers...
+15:00:38.087 -> RPM: 5
+15:00:38.087 -> Timing: 0.00 DEG
+15:00:38.121 -> Switch Position: 0
+15:00:38.121 -> Current Loop Input: 0.00 mA
+15:00:38.121 -> Disk Observed X+1: 0
+15:00:38.121 -> Insertion Retard: 0.00 DEG
+15:00:38.121 -> Switch Retard: 0.00 DEG
+15:00:38.121 -> Loop Retard: 0.00 DEG
+15:00:39.104 -> RPM Retard: 0.00 DEG
+15:00:39.104 -> Total Retard: 0.00 DEG
+15:00:39.104 -> Cycle Counter HI: 0
+15:00:39.104 -> Cycle Counter LO: 0
+15:00:39.104 -> Supply Voltage: 0.00 Volts
+15:00:39.138 -> Spark Ref. Num. Output 1: 0
+15:00:39.138 -> Spark Ref. Num. Output 2: 0
+15:00:39.138 -> Spark Ref. Num. Output 3: 0
+15:00:40.123 -> Reading read/write input registers...
+15:00:40.123 -> Disk+1: 5
+15:00:40.123 -> Disk Lineup to TDC: 0.00 DEG
+15:00:40.123 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+15:00:40.123 -> Purge Delay Cycles 0-255: 0
+15:00:40.123 -> RPM Over Speed Setpoint: 0
+15:00:40.123 -> RPM Crank to Run Threshold: 0
+15:00:40.157 -> Low Supply Voltage Limit: 0.00V
+15:00:40.157 -> SLAVE ANGLE: 0.00 DEG
+15:00:41.143 -> Reading misc read/write input registers...
+15:00:41.143 -> Crank Counter: 5
+15:00:41.143 -> Start Counter: 0
+15:00:41.143 -> Cycle Counter HIGH: 0
+15:00:41.143 -> Cycle Counter LOW: 0
+15:00:41.143 -> BAUD (fixed 9600): 0
+15:00:41.143 -> NODEID (fixed n81:node1): 0
+15:00:41.143 -> Cold Boot (powerup) Count: 0
+15:00:41.143 -> Warm Boot (reset) Count: 0.00Reading status bits...
+15:00:44.172 -> 1st Raw data: 5
+15:00:44.172 -> Syncing: 1
+15:00:44.172 -> InSync1: 0
+15:00:44.172 -> InSync2: 1
+15:00:44.172 -> Purging: 0
+15:00:44.172 -> Trying: 0
+15:00:44.172 -> Firing: 0
+15:00:44.172 -> LockOut: 0
+15:00:44.172 -> FIRED: 0
+15:00:45.159 -> 2nd Raw data: 5
+15:00:45.159 -> Cranking: 1
+15:00:45.159 -> Running: 0
+15:00:45.159 -> Wrong Disk: 1
+15:00:45.159 -> GLead Shutdown Grounded: 0
+15:00:45.159 -> Remote Shutdown Present: 0
+15:00:45.192 -> GLead Shutdown Logged: 0
+15:00:45.192 -> Remote Shutdown Logged: 0
+15:00:45.192 -> Overspeed Shutdown Logged: 0
+15:00:46.175 -> 3rd Raw data: 5
+15:00:46.175 -> WDOG1 Reset Latched: 1
+15:00:46.175 -> WDOG2 Reset Event: 0
+15:00:46.175 -> CheckSum Error: 1
+15:00:46.175 -> LOW Supply Voltage: 0
+15:00:46.175 -> No Charge: 0
+15:00:46.175 -> Open Primary: 0
+15:00:46.175 -> Shorted Primary: 0
+15:00:46.175 -> Open Secondary: 0
+15:00:47.192 -> Reading read only status registers...
+15:00:47.192 -> RPM: 5
+15:00:47.192 -> Timing: 0.00 DEG
+15:00:47.192 -> Switch Position: 0
+15:00:47.192 -> Current Loop Input: 0.00 mA
+15:00:47.192 -> Disk Observed X+1: 0
+15:00:47.192 -> Insertion Retard: 0.00 DEG
+15:00:47.192 -> Switch Retard: 0.00 DEG
+15:00:47.192 -> Loop Retard: 0.00 DEG
+15:00:48.210 -> RPM Retard: 0.00 DEG
+15:00:48.210 -> Total Retard: 0.00 DEG
+15:00:48.210 -> Cycle Counter HI: 0
+15:00:48.210 -> Cycle Counter LO: 0
+15:00:48.210 -> Supply Voltage: 0.00 Volts
+15:00:48.210 -> Spark Ref. Num. Output 1: 0
+15:00:48.210 -> Spark Ref. Num. Output 2: 0
+15:00:48.210 -> Spark Ref. Num. Output 3: 0
+15:00:49.196 -> Reading read/write input registers...
+15:00:49.230 -> Disk+1: 5
+15:00:49.230 -> Disk Lineup to TDC: 0.00 DEG
+15:00:49.230 -> Insertion Ret MIN=2.0 DEG: 0.00 DEG
+15:00:49.230 -> Purge Delay Cycles 0-255: 0
+15:00:49.230 -> RPM Over Speed Setpoint: 0
+15:00:49.230 -> RPM Crank to Run Threshold: 0
+15:00:49.230 -> Low Supply Voltage Limit: 0.00V
+15:00:49.230 -> SLAVE ANGLE: 0.00 DEG
+15:00:50.215 -> Reading misc read/write input registers...
+15:00:50.249 -> Crank Counter: 5
+15:00:50.249 -> Start Counter: 0
+15:00:50.249 -> Cycle Counter HIGH: 0
+15:00:50.249 -> Cycle Counter LOW: 0
+15:00:50.249 -> BAUD (fixed 9600): 0
+15:00:50.249 -> NODEID (fixed n81:node1): 0
+15:00:50.249 -> Cold Boot (powerup) Count: 0
+15:00:50.249 -> Warm Boot (reset) Count: 0.00Reading status bits...
