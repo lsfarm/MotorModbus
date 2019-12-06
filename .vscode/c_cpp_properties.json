@@ -3,6 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
+                "C:\\Users\\Lance\\OneDrive - Valley View Partners GP\\GitHub\\MotorModbus\\Libraries\\ModbusMaster-master\\src",
                 "C:\\Users\\Lance\\Dropbox\\My Files\\Arduino\\Program Files\\tools\\**",
                 "C:\\Users\\Lance\\Dropbox\\My Files\\Arduino\\Program Files\\hardware\\arduino\\avr\\**",
                 "${projectRoot}..\\MotorModbus",
