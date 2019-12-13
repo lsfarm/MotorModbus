@@ -1,0 +1,79 @@
+Run Date: 12/12/2019
+Motor running at slow idle
+
+>>line 62  (15:51:24.023 -> Disk+1: 1126) is the only output that I'm sure about<<
+
+Reading status bits...
+15:51:18.828 -> 1st Raw data: 5
+15:51:18.828 -> Syncing: 1
+15:51:18.828 -> InSync1: 0
+15:51:18.828 -> InSync2: 1
+15:51:18.828 -> Purging: 0
+15:51:18.828 -> Trying: 0
+15:51:18.828 -> Firing: 0
+15:51:18.828 -> LockOut: 0
+15:51:18.828 -> FIRED: 0
+
+//No data here now, we had some in earlier versions
+15:51:19.858 -> 2nd Raw data: 0
+15:51:19.858 -> Cranking: 0
+15:51:19.858 -> Running: 0
+15:51:19.858 -> Wrong Disk: 0
+15:51:19.858 -> GLead Shutdown Grounded: 0
+15:51:19.858 -> Remote Shutdown Present: 0
+15:51:19.858 -> GLead Shutdown Logged: 0
+15:51:19.858 -> Remote Shutdown Logged: 0
+15:51:19.858 -> Overspeed Shutdown Logged: 0
+
+
+15:51:20.887 -> 3rd Raw data: 0
+15:51:20.887 -> WDOG1 Reset Latched: 0
+15:51:20.887 -> WDOG2 Reset Event: 0
+15:51:20.887 -> CheckSum Error: 0
+15:51:20.887 -> LOW Supply Voltage: 0
+15:51:20.887 -> No Charge: 0
+15:51:20.887 -> Open Primary: 0
+15:51:20.887 -> Shorted Primary: 0
+15:51:20.887 -> Open Secondary: 0
+
+
+15:51:21.917 -> Reading read only status registers...
+15:51:21.917 -> RPM: 3
+15:51:21.917 -> Timing: 40.00 DEG
+15:51:21.917 -> Switch Position: 20             //switch position is 2
+15:51:21.917 -> Current Loop Input: 0.00 mA
+15:51:21.964 -> Disk Observed X+1: 1950        
+15:51:21.964 -> Insertion Retard: 20.00 DEG
+15:51:21.964 -> Switch Retard: 6.00 DEG
+15:51:21.964 -> Loop Retard: 0.00 DEG
+
+15:51:22.993 -> RPM Retard: 0.00 DEG
+15:51:22.993 -> Total Retard: 0.00 DEG
+15:51:22.993 -> Cycle Counter HI: 0
+15:51:22.993 -> Cycle Counter LO: 0
+15:51:22.993 -> Supply Voltage: 0.00 Volts        //= to 12-14 volts
+15:51:22.993 -> Spark Ref. Num. Output 1: 0
+15:51:22.993 -> Spark Ref. Num. Output 2: 0
+15:51:22.993 -> Spark Ref. Num. Output 3: 0
+
+node.readInputRegisters(4, 8);
+
+15:51:23.976 -> Reading read/write input registers...
+15:51:24.023 -> Disk+1: 1126      //this output is 30005 address   //this is rpm I can speed up and slow down the motor and this number is always equal to my tachmeter reading
+15:51:24.023 -> Disk Lineup to TDC: 33.00 DEG
+15:51:24.023 -> Insertion Ret MIN=2.0 DEG: 0.20 DEG
+15:51:24.023 -> Purge Delay Cycles 0-255: 0
+15:51:24.023 -> RPM Over Speed Setpoint: 3        //should be 2000-3000
+15:51:24.023 -> RPM Crank to Run Threshold: 20    //this might be right would expect a higher number
+15:51:24.023 -> Low Supply Voltage Limit: 5.00V   //this seems to be right
+15:51:24.023 -> SLAVE ANGLE: 0.00 DEG
+
+15:51:25.052 -> Reading misc read/write input registers...
+15:51:25.052 -> Crank Counter: 0
+15:51:25.099 -> Start Counter: 0
+15:51:25.099 -> Cycle Counter HIGH: 0
+15:51:25.099 -> Cycle Counter LOW: 0
+15:51:25.099 -> BAUD (fixed 9600): 0
+15:51:25.099 -> NODEID (fixed n81:node1): 0
+15:51:25.099 -> Cold Boot (powerup) Count: 0
+15:51:25.099 -> Warm Boot (reset) Count: 0.00Reading status bits...
