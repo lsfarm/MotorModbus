@@ -62,7 +62,7 @@ void loop()
 
 void readTest() {
   uint8_t result = 0xE2;
-  uint16_t data;
+  uint16_t data = 0;
   uint8_t tries = 0;
 
   // Read coils at function address FC(0x01) Register(10001) Address(0) Hex(0x0000) (Read-Only Status Bits)
@@ -90,6 +90,8 @@ void readTest() {
     Serial.print("Result: ");Serial.println(result);
   }
   
+  node.clearResponseBuffer();
+  node.clearTransmitBuffer();
   delay(1000);
   Serial.flush();
 
@@ -116,6 +118,8 @@ void readTest() {
     Serial.print("Result: ");Serial.println(result);
   }
   
+  node.clearResponseBuffer();
+  node.clearTransmitBuffer();
   delay(1000);
   Serial.flush();
 
@@ -142,6 +146,8 @@ void readTest() {
     Serial.print("Result: ");Serial.println(result);
   }
 
+  node.clearResponseBuffer();
+  node.clearTransmitBuffer();
   delay(1000);
   Serial.flush();
 
@@ -169,6 +175,8 @@ void readTest() {
     Serial.print("Result: ");Serial.println(result);
   }
 
+  node.clearResponseBuffer();
+  node.clearTransmitBuffer();
   delay(1000);
   Serial.flush();
 
@@ -193,6 +201,8 @@ void readTest() {
     Serial.print("Result: ");Serial.println(result);
   }
 
+  node.clearResponseBuffer();
+  node.clearTransmitBuffer();
   delay(1000);
   Serial.flush();
   
@@ -240,6 +250,8 @@ void readTest() {
         Serial.print("Result: ");Serial.println(result);
   }
   
+  node.clearResponseBuffer();
+  node.clearTransmitBuffer();
   delay(1000);
   Serial.flush();
 
@@ -283,6 +295,8 @@ void readTest() {
     Serial.print("Result: ");Serial.println(result);
   }
   
+  node.clearResponseBuffer();
+  node.clearTransmitBuffer();
   delay(1000);
   Serial.flush();
 }
