@@ -10,11 +10,11 @@
 #include <ModbusMaster-Particle.h>
 
 #include <blynk.h>
-char auth[] = "Sjo1mNu68Y6V1cWo9VgVs8Io9RkQO7QE"; 
+//char auth[] = "cvxyCmbzdECipLp5VXu7BqLWlLAVYhM8"; 
 BlynkTimer timer;
-bool sendtoblynkenable = 1;
+bool sendtoblynkenable = 0;
 
-WidgetLED led1(V12);
+//WidgetLED led1(V12);
 
 // Changed pins for argon
 #define MAX485_DE      2
@@ -48,9 +48,9 @@ void postTransmission()
 
 void setup()
 {
-  Time.zone(-2.5);
-  Blynk.begin(auth);
-  timer.setInterval(5000L, sendinfo);
+  //Time.zone(-2.5);
+  //Blynk.begin(auth);
+  //timer.setInterval(5000L, sendinfo);
   timer.setInterval(2000L, readTest);
   
   pinMode(MAX485_RE_NEG, OUTPUT);
@@ -84,7 +84,7 @@ void idle() {
 
 void loop()
 {
-  Blynk.run();
+  //Blynk.run();
   timer.run();
 }
 
@@ -92,7 +92,7 @@ void sendinfo()
 {
     if(sendtoblynkenable == 1)
     {
-        Blynk.virtualWrite(V0, Time.format(Time.local(), "%r - %a %D"));
+        //Blynk.virtualWrite(V100, Time.format(Time.local(), "%r - %a %D"));
         //Blynk.virtualWrite(V20, mm);
         //Blynk.virtualWrite(V21, temp);
         //Blynk.virtualWrite(V22, gal); 
@@ -117,6 +117,7 @@ void readTest() {
   uint8_t tries = 0;
 
   // Read coils at function address FC(0x01) Register(10001) Address(0) Hex(0x0000) (Read-Only Status Bits)
+  // 1st set is reading - set 2&3 no data.. Going to try reading all coils in 1 go.
   publish("Reading status bits...");
   do {
     result = node.readCoils(0, 8);
@@ -178,7 +179,8 @@ void readTest() {
     sprintf(
       toPublish,
       "2nd Raw data: %d\n"
-      "Cranking: %d\nRunning: %d\n"
+      "Cranking: %d\n"
+      "Running: %d\n"
       "Wrong Disk: %d\n"
       "GLead Shutdown Grounded: %d\n"
       "Remote Shutdown Present: %d\n"
@@ -264,7 +266,7 @@ void readTest() {
   
   tries = 0;
   do {
-    result = node.readHoldingRegisters(4, 8);
+    result = node.readInputRegisters(4, 8); // << seems to be correct original: result = node.readHoldingRegisters(4, 8);
     tries++;
   }
   while (tries < MAX_TRIES && result != node.ku8MBSuccess);
@@ -308,7 +310,7 @@ void readTest() {
 
   tries = 0;
   do {
-    result = node.readHoldingRegisters(12, 8);
+    result = node.readInputRegisters(12, 8); //<<correct now original: result = node.readHoldingRegisters(12, 8);
     tries++;
   }
   while (tries < MAX_TRIES && result != node.ku8MBSuccess);
@@ -324,14 +326,14 @@ void readTest() {
       "Spark Ref. Num. Output 1: %d\n"
       "Spark Ref. Num. Output 2: %d\n"
       "Spark Ref. Num. Output 3: %d\n",
-      (node.getResponseBuffer(8) / 10.0f),
-      (node.getResponseBuffer(9) / 10.0f),
-      node.getResponseBuffer(10),
-      node.getResponseBuffer(11),
-      (node.getResponseBuffer(12) / 10.0f),
-      node.getResponseBuffer(13),
-      node.getResponseBuffer(14),
-      node.getResponseBuffer(15)
+      (node.getResponseBuffer(0) / 10.0f),
+      (node.getResponseBuffer(1) / 10.0f),
+      node.getResponseBuffer(2),
+      node.getResponseBuffer(3),
+      (node.getResponseBuffer(4) / 10.0f),
+      node.getResponseBuffer(5),
+      node.getResponseBuffer(6),
+      node.getResponseBuffer(7)
     );
 
     publish(toPublish);
@@ -355,7 +357,7 @@ void readTest() {
 
   tries = 0;
   do {
-    result = node.readInputRegisters(4, 8);
+    result = node.readHoldingRegisters(4, 8);  // <<corrrect original: result = node.readInputRegisters(4, 8);
     tries++;
   }
   while (tries < MAX_TRIES && result != node.ku8MBSuccess);
@@ -402,7 +404,7 @@ void readTest() {
 
   tries = 0;
   do {
-    result = node.readInputRegisters(121, 7);
+    result = node.readHoldingRegisters(121, 7); //<<mostly working original: result = node.readInputRegisters(121, 7);
     tries++;
   }
   while (tries < MAX_TRIES && result != node.ku8MBSuccess);
