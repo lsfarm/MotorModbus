@@ -51,7 +51,7 @@ void setup()
   //Time.zone(-2.5);
   //Blynk.begin(auth);
   //timer.setInterval(5000L, sendinfo);
-  timer.setInterval(2000L, readTest);
+  timer.setInterval(12000L, readTest);
   
   pinMode(MAX485_RE_NEG, OUTPUT);
   pinMode(MAX485_DE, OUTPUT);
@@ -116,16 +116,65 @@ void readTest() {
   uint16_t data = 0;
   uint8_t tries = 0;
 
-  // Read coils at function address FC(0x01) Register(10001) Address(0) Hex(0x0000) (Read-Only Status Bits)
-  // 1st set is reading - set 2&3 no data.. Going to try reading all coils in 1 go.
-  publish("Reading status bits...");
+  // Read coils at function address FC(0x01) Register(00001) Address(0) Hex(0x0000) (read/write configuration bits)
+  publish("Reading configuration bits");
+  tries = 0;
   do {
     result = node.readCoils(0, 8);
     tries++;
   }
   while (tries < MAX_TRIES && result != node.ku8MBSuccess);
 
-  // Not 100% on the order of bits
+  if (result == node.ku8MBSuccess) {
+    data = node.getResponseBuffer(0);
+    sprintf(
+      toPublish,
+      "Coils Raw Data: %d\n"
+      "Disk on CAM=0 CRANK=1: %d\n"
+      "Test for proper disk YES=1: %d\n"
+      "Enable secondary Diags YES=1: %d\n"
+      "Energy Bit0 00=~160 01=~170: %d\n"
+      "Energy Bit1 10=~180 11=~190: %d\n"
+      "SLAVE: %d\n"
+      "reserved: %d\n"
+      "reserved: %d\n",
+      data,
+      bitRead(data, 0),
+      bitRead(data, 1),
+      bitRead(data, 2),
+      bitRead(data, 3),
+      bitRead(data, 4),
+      bitRead(data, 5),
+      bitRead(data, 6),
+      bitRead(data, 7)
+    );
+
+    publish(toPublish);
+  } else {
+    sprintf(
+      toPublish,
+      "Failed to read coils\n"
+      "Result: %d",
+      result
+    );
+
+    publish(toPublish);
+  }
+
+  node.clearResponseBuffer();
+  node.clearTransmitBuffer();
+  delay(15000);
+
+  // Read discrete inputs at function address FC(0x02) Register(10001) Address(0) Hex(0x0000) (Read-Only Status Bits)
+  // Switched from coils to discrete inputs
+  publish("Reading Discrete Inputs");
+  tries = 0;
+  do {
+    result = node.readDiscreteInputs(0, 24);
+    tries++;
+  }
+  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
+
   if (result == node.ku8MBSuccess) {
     data = node.getResponseBuffer(0);
     sprintf(
@@ -139,7 +188,7 @@ void readTest() {
       "Firing: %d\n"
       "LockOut: %d\n"
       "FIRED: %d",
-      data,
+      lowByte(data),
       bitRead(data, 0),
       bitRead(data, 1),
       bitRead(data, 2),
@@ -151,31 +200,8 @@ void readTest() {
     );
 
     publish(toPublish);
-
-  } else {
-    sprintf(
-      toPublish,
-      "Failed to read 1st set of coils\n"
-      "Result: %d",
-      result
-    );
-
-    publish(toPublish);
-  }
-  
-  node.clearResponseBuffer();
-  node.clearTransmitBuffer();
-  delay(1000);
-
-  tries = 0;
-  do {
-    result = node.readCoils(8, 8);
-    tries++;
-  }
-  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
-
-  if (result == node.ku8MBSuccess) {
-    data = node.getResponseBuffer(0);
+    
+    data = highByte(data);
     sprintf(
       toPublish,
       "2nd Raw data: %d\n"
@@ -199,30 +225,8 @@ void readTest() {
     );
     
     publish(toPublish);
-  } else {
-    sprintf(
-      toPublish,
-      "Failed to read 2nd set of coils\n"
-      "Result: %d",
-      result
-    );
-
-    publish(toPublish);
-  }
-  
-  node.clearResponseBuffer();
-  node.clearTransmitBuffer();
-  delay(1000);
-
-  tries = 0;
-  do {
-    result = node.readCoils(16, 8);
-    tries++;
-  }
-  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
-
-  if (result == node.ku8MBSuccess) {
-    data = node.getResponseBuffer(0);
+    
+    data = node.getResponseBuffer(1);
     sprintf(
       toPublish,
       "3rd Raw data: %d\n"
@@ -249,7 +253,7 @@ void readTest() {
   } else {
     sprintf(
       toPublish,
-      "Failed to read 3rd set of coils\n"
+      "Failed to read discrete inputs\n"
       "Result: %d",
       result
     );
@@ -259,7 +263,123 @@ void readTest() {
 
   node.clearResponseBuffer();
   node.clearTransmitBuffer();
-  delay(1000);
+  delay(15000);
+
+  publish("Reading Input Bit Mirrors");
+  
+  tries = 0;
+  do {
+    result = node.readInputRegisters(0, 4);
+    tries++;
+  }
+  while (tries < MAX_TRIES && result != node.ku8MBSuccess);
+  
+  if (result == node.ku8MBSuccess) {
+    data = node.getResponseBuffer(0);
+    sprintf(
+      toPublish,
+      "Input Bit Mirror 10016-10001: %d\n"
+      "Input Bit Mirror 10032-10017: %d\n"
+      "Input Bit Mirror 10048-10033: %d\n"
+      "Input Bit Mirror 10064-10049: %d\n",
+      data,
+      node.getResponseBuffer(1),
+      node.getResponseBuffer(2),
+      node.getResponseBuffer(3)
+    );
+    
+    publish(toPublish);
+    
+    sprintf(
+      toPublish,
+      "Bit mirrored: "
+      "1st Raw data: %d\n"
+      "Syncing: %d\n"
+      "InSync1: %d\n"
+      "InSync2: %d\n"
+      "Purging: %d\n"
+      "Trying: %d\n"
+      "Firing: %d\n"
+      "LockOut: %d\n"
+      "FIRED: %d",
+      lowByte(data),
+      bitRead(data, 0),
+      bitRead(data, 1),
+      bitRead(data, 2),
+      bitRead(data, 3),
+      bitRead(data, 4),
+      bitRead(data, 5),
+      bitRead(data, 6),
+      bitRead(data, 7)
+    );
+
+    publish(toPublish);
+    
+    data = highByte(data);
+    sprintf(
+      toPublish,
+      "Bit mirrored: "
+      "2nd Raw data: %d\n"
+      "Cranking: %d\n"
+      "Running: %d\n"
+      "Wrong Disk: %d\n"
+      "GLead Shutdown Grounded: %d\n"
+      "Remote Shutdown Present: %d\n"
+      "GLead Shutdown Logged: %d\n"
+      "Remote Shutdown Logged: %d\n"
+      "Overspeed Shutdown Logged: %d\n",
+      data,
+      bitRead(data, 0),
+      bitRead(data, 1),
+      bitRead(data, 2),
+      bitRead(data, 3),
+      bitRead(data, 4),
+      bitRead(data, 5),
+      bitRead(data, 6),
+      bitRead(data, 7)
+    );
+    
+    publish(toPublish);
+    
+    data = node.getResponseBuffer(1);
+    sprintf(
+      toPublish,
+      "Bit mirrored: "
+      "3rd Raw data: %d\n"
+      "WDOG1 Reset Latched: %d\n"
+      "WDOG2 Reset Event: %d\n"
+      "CheckSum Error: %d\n"
+      "LOW Supply Voltage: %d\n"
+      "No Charge: %d\n"
+      "Open Primary: %d\n"
+      "Shorted Primary: %d\n"
+      "Open Secondary: %d",
+      data,
+      bitRead(data, 0),
+      bitRead(data, 1),
+      bitRead(data, 2),
+      bitRead(data, 3),
+      bitRead(data, 4),
+      bitRead(data, 5),
+      bitRead(data, 6),
+      bitRead(data, 7)
+    );
+
+    publish(toPublish);
+  } else {
+    sprintf(
+      toPublish,
+      "Failed to read input bit mirrors!\n"
+      "Result: %d",
+      result
+    );
+    
+    publish(toPublish);
+  }
+
+  node.clearResponseBuffer();
+  node.clearTransmitBuffer();
+  delay(15000);
 
   // Read the 16 registers at function address FC(0x03) Register(30005) Address(4) HEX(0x0004) (Read only status registers starting with RPM)
   publish("Reading read only status registers...");
@@ -306,7 +426,7 @@ void readTest() {
 
   node.clearResponseBuffer();
   node.clearTransmitBuffer();
-  delay(1000);
+  delay(15000);
 
   tries = 0;
   do {
@@ -350,10 +470,10 @@ void readTest() {
 
   node.clearResponseBuffer();
   node.clearTransmitBuffer();
-  delay(1000);
+  delay(15000);
   
   // Read 8 read/write registers starting at function address FC(0x04) Register(40005) Address(4) HEX(0x0004)
-  publish("Reading read/write input registers...");
+  Particle.publish("Reading read/write input registers..."); //origianl: publish("Reading read/write input registers...");
 
   tries = 0;
   do {
@@ -397,7 +517,7 @@ void readTest() {
   
   node.clearResponseBuffer();
   node.clearTransmitBuffer();
-  delay(1000);
+  delay(15000);
 
   // Read 7 misc read/write registers starting at function address FC(0x04) Register(40122) Address(121) HEX(0x0079)
   publish("Reading misc read/write input registers...");
@@ -446,5 +566,5 @@ void readTest() {
   
   node.clearResponseBuffer();
   node.clearTransmitBuffer();
-  delay(1000);
+  delay(15000);
 }
